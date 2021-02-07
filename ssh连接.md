@@ -14,8 +14,19 @@ ssh gzw@192.168.1.1
 ```
 PermitRootLogin yes
 ```
+然后重启
+```
+systemctl restart sshd
+```
 #### 连接命令
 ```bash
 #不加用户名@则默认使用root用户
 ssh 192.168.1.1
 ```
+## 3. 免密登录
+在客户端生成ssh公钥
+```bash
+ssh-copy-id gzw@192.168.1.1
+>输入密码
+```
+下次登录则不需要密码
