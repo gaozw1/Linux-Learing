@@ -1,4 +1,12 @@
 # 客户端连接服务端
+## 0. 设置被连接用户
+添加ssh.service并启动sshd
+```
+systemctl enable ssh.service
+service sshd restart
+
+```
+
 ## 1. 选择用户连接
 #### 连接命令
 ```bash
